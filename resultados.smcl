@@ -1,0 +1,286 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/jorgegalindoalfonso/Desktop/resultados.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}17 Nov 2014, 02:11:37
+
+{com}. logit votopodemos lasexta edad ideologia if ideologia<11
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-606.05329}  
+Iteration 1:{space 3}log likelihood = {res:-548.48884}  
+Iteration 2:{space 3}log likelihood = {res:-531.90061}  
+Iteration 3:{space 3}log likelihood = {res:-531.80517}  
+Iteration 4:{space 3}log likelihood = {res:-531.80513}  
+{res}
+{txt}Logistic regression{col 51}Number of obs{col 67}= {res}      1986
+{txt}{col 51}LR chi2({res}3{txt}){col 67}= {res}    148.50
+{txt}{col 51}Prob > chi2{col 67}= {res}    0.0000
+{txt}Log likelihood = {res}-531.80513{txt}{col 51}Pseudo R2{col 67}= {res}    0.1225
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1} votopodemos{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      z{col 46}   P>|z|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}lasexta {c |}{col 14}{res}{space 2} 1.048258{col 26}{space 2} .1801104{col 37}{space 1}    5.82{col 46}{space 3}0.000{col 54}{space 4} .6952481{col 67}{space 3} 1.401268
+{txt}{space 8}edad {c |}{col 14}{res}{space 2}-.0249922{col 26}{space 2} .0053315{col 37}{space 1}   -4.69{col 46}{space 3}0.000{col 54}{space 4}-.0354417{col 67}{space 3}-.0145426
+{txt}{space 3}ideologia {c |}{col 14}{res}{space 2}-.3636672{col 26}{space 2}  .052894{col 37}{space 1}   -6.88{col 46}{space 3}0.000{col 54}{space 4}-.4673375{col 67}{space 3}-.2599968
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .0123032{col 26}{space 2} .2984678{col 37}{space 1}    0.04{col 46}{space 3}0.967{col 54}{space 4} -.572683{col 67}{space 3} .5972895
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. prchange
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+  lasexta  {res}  0.0869    0.0869    0.0636    0.0218    0.0618
+{txt}     edad  {res} -0.1048   -0.0037   -0.0015   -0.0260   -0.0015
+{txt}ideologia  {res} -0.1866   -0.0636   -0.0215   -0.0415   -0.0215
+
+         {txt}     0       1
+Pr(y|x)  {res}0.9371  0.0629
+
+        {txt}  lasexta       edad  ideologia
+    x=  {res}  .144008    48.5166    4.54028
+{txt}sd(x)=  {res}  .351186    17.5367    1.90813
+
+{com}. prchange, x(edad 21)
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+  lasexta  {res}  0.1438    0.1438    0.1108    0.0384    0.1090
+{txt}     edad  {res} -0.1048   -0.0037   -0.0026   -0.0457   -0.0026
+{txt}ideologia  {res} -0.3082   -0.0843   -0.0379   -0.0727   -0.0378
+
+         {txt}     0       1
+Pr(y|x)  {res}0.8821  0.1179
+
+        {txt}  lasexta       edad  ideologia
+    x=  {res}  .144008         21    4.54028
+{txt}sd(x)=  {res}  .351186    17.5367    1.90813
+
+{com}. prchange, x(edad 70)
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+  lasexta  {res}  0.0552    0.0552    0.0395    0.0134    0.0381
+{txt}     edad  {res} -0.1048   -0.0037   -0.0009   -0.0160   -0.0009
+{txt}ideologia  {res} -0.1192   -0.0454   -0.0133   -0.0256   -0.0132
+
+         {txt}     0       1
+Pr(y|x)  {res}0.9622  0.0378
+
+        {txt}  lasexta       edad  ideologia
+    x=  {res}  .144008         70    4.54028
+{txt}sd(x)=  {res}  .351186    17.5367    1.90813
+
+{com}. prchange, x(ideologia 3)
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+  lasexta  {res}  0.1321    0.1321    0.1006    0.0348    0.0987
+{txt}     edad  {res} -0.1650   -0.0050   -0.0024   -0.0414   -0.0024
+{txt}ideologia  {res} -0.1866   -0.0636   -0.0343   -0.0659   -0.0342
+
+         {txt}     0       1
+Pr(y|x)  {res}0.8948  0.1052
+
+        {txt}  lasexta       edad  ideologia
+    x=  {res}  .144008    48.5166          3
+{txt}sd(x)=  {res}  .351186    17.5367    1.90813
+
+{com}. prchange, x(ideologia 8)
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+  lasexta  {res}  0.0286    0.0286    0.0201    0.0068    0.0193
+{txt}     edad  {res} -0.0332   -0.0014   -0.0005   -0.0081   -0.0005
+{txt}ideologia  {res} -0.1866   -0.0636   -0.0067   -0.0130   -0.0067
+
+         {txt}     0       1
+Pr(y|x)  {res}0.9813  0.0187
+
+        {txt}  lasexta       edad  ideologia
+    x=  {res}  .144008    48.5166          8
+{txt}sd(x)=  {res}  .351186    17.5367    1.90813
+
+{com}. prchange, x(edad 21 ideologia 3)
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+  lasexta  {res}  0.1972    0.1972    0.1616    0.0566    0.1611
+{txt}     edad  {res} -0.1650   -0.0050   -0.0038   -0.0674   -0.0038
+{txt}ideologia  {res} -0.3082   -0.0843   -0.0559   -0.1068   -0.0559
+
+         {txt}     0       1
+Pr(y|x)  {res}0.8104  0.1896
+
+        {txt}  lasexta       edad  ideologia
+    x=  {res}  .144008         21          3
+{txt}sd(x)=  {res}  .351186    17.5367    1.90813
+
+{com}. prchange, x(edad 70 ideologia 8)
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+  lasexta  {res}  0.0171    0.0171    0.0119    0.0040    0.0114
+{txt}     edad  {res} -0.0332   -0.0014   -0.0003   -0.0048   -0.0003
+{txt}ideologia  {res} -0.1192   -0.0454   -0.0040   -0.0077   -0.0040
+
+         {txt}     0       1
+Pr(y|x)  {res}0.9890  0.0110
+
+        {txt}  lasexta       edad  ideologia
+    x=  {res}  .144008         70          8
+{txt}sd(x)=  {res}  .351186    17.5367    1.90813
+
+{com}. 
+. 
+. logit votopodemos cuatro edad ideologia if ideologia<11
+
+{res}{txt}Iteration 0:{space 3}log likelihood = {res:-606.05329}  
+Iteration 1:{space 3}log likelihood = {res:-552.38575}  
+Iteration 2:{space 3}log likelihood = {res:-541.42209}  
+Iteration 3:{space 3}log likelihood = {res:-541.35942}  
+Iteration 4:{space 3}log likelihood = {res: -541.3594}  
+{res}
+{txt}Logistic regression{col 51}Number of obs{col 67}= {res}      1986
+{txt}{col 51}LR chi2({res}3{txt}){col 67}= {res}    129.39
+{txt}{col 51}Prob > chi2{col 67}= {res}    0.0000
+{txt}Log likelihood = {res} -541.3594{txt}{col 51}Pseudo R2{col 67}= {res}    0.1067
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1} votopodemos{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      z{col 46}   P>|z|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}cuatro {c |}{col 14}{res}{space 2} 1.191743{col 26}{space 2} .3125661{col 37}{space 1}    3.81{col 46}{space 3}0.000{col 54}{space 4} .5791243{col 67}{space 3} 1.804361
+{txt}{space 8}edad {c |}{col 14}{res}{space 2}-.0226039{col 26}{space 2} .0052481{col 37}{space 1}   -4.31{col 46}{space 3}0.000{col 54}{space 4}-.0328899{col 67}{space 3}-.0123179
+{txt}{space 3}ideologia {c |}{col 14}{res}{space 2}-.4243641{col 26}{space 2} .0514494{col 37}{space 1}   -8.25{col 46}{space 3}0.000{col 54}{space 4}-.5252031{col 67}{space 3} -.323525
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .3226754{col 26}{space 2} .2835641{col 37}{space 1}    1.14{col 46}{space 3}0.255{col 54}{space 4}   -.2331{col 67}{space 3} .8784508
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. prchange
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+   cuatro  {res}  0.1182    0.1182    0.0754    0.0131    0.0727
+{txt}     edad  {res} -0.0979   -0.0032   -0.0014   -0.0243   -0.0014
+{txt}ideologia  {res} -0.2321   -0.0853   -0.0260   -0.0503   -0.0259
+
+         {txt}     0       1
+Pr(y|x)  {res}0.9347  0.0653
+
+        {txt}   cuatro       edad  ideologia
+    x=  {res}  .033233    48.5166    4.54028
+{txt}sd(x)=  {res}  .179289    17.5367    1.90813
+
+{com}. prchange, x(edad 21)
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+   cuatro  {res}  0.1805    0.1805    0.1241    0.0218    0.1214
+{txt}     edad  {res} -0.0979   -0.0032   -0.0023   -0.0405   -0.0023
+{txt}ideologia  {res} -0.3563   -0.1030   -0.0434   -0.0834   -0.0432
+
+         {txt}     0       1
+Pr(y|x)  {res}0.8848  0.1152
+
+        {txt}   cuatro       edad  ideologia
+    x=  {res}  .033233         21    4.54028
+{txt}sd(x)=  {res}  .179289    17.5367    1.90813
+
+{com}. prchange, x(edad 70)
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+   cuatro  {res}  0.0801    0.0801    0.0492    0.0085    0.0471
+{txt}     edad  {res} -0.0979   -0.0032   -0.0009   -0.0157   -0.0009
+{txt}ideologia  {res} -0.1577   -0.0661   -0.0169   -0.0327   -0.0168
+
+         {txt}     0       1
+Pr(y|x)  {res}0.9588  0.0412
+
+        {txt}   cuatro       edad  ideologia
+    x=  {res}  .033233         70    4.54028
+{txt}sd(x)=  {res}  .179289    17.5367    1.90813
+
+{com}. prchange, x(ideologia 3)
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+   cuatro  {res}  0.1840    0.1840    0.1271    0.0223    0.1244
+{txt}     edad  {res} -0.1654   -0.0046   -0.0024   -0.0415   -0.0024
+{txt}ideologia  {res} -0.2321   -0.0853   -0.0444   -0.0854   -0.0443
+
+         {txt}     0       1
+Pr(y|x)  {res}0.8816  0.1184
+
+        {txt}   cuatro       edad  ideologia
+    x=  {res}  .033233    48.5166          3
+{txt}sd(x)=  {res}  .179289    17.5367    1.90813
+
+{com}. prchange, x(ideologia 8)
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+   cuatro  {res}  0.0332    0.0332    0.0196    0.0033    0.0186
+{txt}     edad  {res} -0.0254   -0.0010   -0.0004   -0.0062   -0.0004
+{txt}ideologia  {res} -0.2321   -0.0853   -0.0067   -0.0129   -0.0066
+
+         {txt}     0       1
+Pr(y|x)  {res}0.9842  0.0158
+
+        {txt}   cuatro       edad  ideologia
+    x=  {res}  .033233    48.5166          8
+{txt}sd(x)=  {res}  .179289    17.5367    1.90813
+
+{com}. prchange, x(edad 21 ideologia 3)
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+   cuatro  {res}  0.2481    0.2481    0.1911    0.0342    0.1908
+{txt}     edad  {res} -0.1654   -0.0046   -0.0036   -0.0635   -0.0036
+{txt}ideologia  {res} -0.3563   -0.1030   -0.0680   -0.1297   -0.0679
+
+         {txt}     0       1
+Pr(y|x)  {res}0.7999  0.2001
+
+        {txt}   cuatro       edad  ideologia
+    x=  {res}  .033233         21          3
+{txt}sd(x)=  {res}  .179289    17.5367    1.90813
+
+{com}. prchange, x(edad 70 ideologia 8)
+
+{res}logit{txt}: Changes in Predicted Probabilities for {res}votopodemos
+
+           {txt}min->max      0->1     -+1/2    -+sd/2  MargEfct
+   cuatro  {res}  0.0210    0.0210    0.0122    0.0021    0.0116
+{txt}     edad  {res} -0.0254   -0.0010   -0.0002   -0.0039   -0.0002
+{txt}ideologia  {res} -0.1577   -0.0661   -0.0041   -0.0081   -0.0041
+
+         {txt}     0       1
+Pr(y|x)  {res}0.9902  0.0098
+
+        {txt}   cuatro       edad  ideologia
+    x=  {res}  .033233         70          8
+{txt}sd(x)=  {res}  .179289    17.5367    1.90813
+
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/jorgegalindoalfonso/Desktop/resultados.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}17 Nov 2014, 02:11:55
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
